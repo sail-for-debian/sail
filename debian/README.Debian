@@ -1,0 +1,10 @@
+sail for Debian
+
+For sail Debian package, we have to package it into chroot due to lem issue
+
+Install depedences then:
+```
+dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
+```
+
+ -- Bo YU <tsu.yubo@gmail.com>  Sat, 24 Feb 2024 21:22:00 +0800

@@ -1,0 +1,2213 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: sail
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .dockerignore
+           .git-blame-ignore-revs
+           .github/workflows/build.yml
+           .github/workflows/coverage.yml
+           .github/workflows/formatting.yml
+           .github/workflows/lower-bounds.yml
+           .github/workflows/test-results.yml
+           .gitignore
+           .ocamlformat
+           .ocamlformat-ignore
+           CHANGELOG.md
+           Dockerfile.nightly
+           Dockerfile.release
+           INSTALL.md
+           Makefile
+           aarch64/Makefile
+           aarch64/README
+           aarch64/ROOT
+           aarch64/_CoqProject
+           aarch64/aarch64_extras.lem
+           aarch64/aarch64_extras.v
+           aarch64/decode_end.sail
+           aarch64/decode_start.sail
+           aarch64/duopod/aarch64_duopod.lem
+           aarch64/duopod/decode.sail
+           aarch64/duopod/spec.sail
+           aarch64/elfmain.sail
+           aarch64/full-coq-sail.patch
+           aarch64/full.sail
+           aarch64/full/decode.sail
+           aarch64/full/spec.sail
+           aarch64/main.sail
+           aarch64/mono/ASR_C.sail
+           aarch64/mono/BigEndianReverse.sail
+           aarch64/mono/CountLeadingSignBits.sail
+           aarch64/mono/LSL_C.sail
+           aarch64/mono/LSR_C.sail
+           aarch64/mono/Poly32Mod2.sail
+           aarch64/mono/Reduce.sail
+           aarch64/mono/SignExtend__0.sail
+           aarch64/mono/ZeroExtend__0.sail
+           aarch64/mono/_slice.sail
+           aarch64/mono/aarch64_extras.lem
+           aarch64/mono/aarch64_integer_crc.sail
+           aarch64/mono/aarch64_memory_exclusive_pair.sail
+           aarch64/mono/aarch64_memory_exclusive_single.sail
+           aarch64/mono/aarch64_memory_literal_general.sail
+           aarch64/mono/aarch64_memory_literal_simdfp.sail
+           aarch64/mono/aarch64_memory_vector_single_nowb.sail
+           aarch64/mono/demo/Holmakefile
+           aarch64/mono/demo/aarch64_no_vector/decode.sail
+           aarch64/mono/demo/aarch64_no_vector/decode_end.sail
+           aarch64/mono/demo/aarch64_no_vector/decode_start.sail
+           aarch64/mono/demo/aarch64_no_vector/hello.c
+           aarch64/mono/demo/aarch64_no_vector/main.sail
+           aarch64/mono/demo/aarch64_no_vector/rpn.c
+           aarch64/mono/demo/aarch64_no_vector/spec.sail
+           aarch64/mono/demo/mk
+           aarch64/mono/demo/mk.hol
+           aarch64/mono/demo/note
+           aarch64/mono/extra_constraints.sail
+           aarch64/no_devices.sail
+           aarch64/no_vector.isail
+           aarch64/no_vector.sail
+           aarch64/no_vector/decode.sail
+           aarch64/no_vector/spec.sail
+           aarch64/prelude.sail
+           aarch64/uart.sail
+           aarch64_small/Makefile
+           aarch64_small/armV8_extras.lem
+           aarch64_small/armV8_extras_embed.lem
+           aarch64_small/armV8_extras_embed_sequential.lem
+           aarch64_small/gen/ast.hgen
+           aarch64_small/gen/fold.hgen
+           aarch64_small/gen/herdtools_ast_to_shallow_ast.hgen
+           aarch64_small/gen/herdtools_types_to_shallow_types.hgen
+           aarch64_small/gen/lexer.hgen
+           aarch64_small/gen/map.hgen
+           aarch64_small/gen/parser.hgen
+           aarch64_small/gen/pretty.hgen
+           aarch64_small/gen/regs_out_in.hgen
+           aarch64_small/gen/sail_trans_out.hgen
+           aarch64_small/gen/shallow_ast_to_herdtools_ast.hgen
+           aarch64_small/gen/shallow_types_to_herdtools_types.hgen
+           aarch64_small/gen/token_types.hgen
+           aarch64_small/gen/tokens.hgen
+           aarch64_small/gen/trans_sail.hgen
+           aarch64_small/gen/types.hgen
+           aarch64_small/gen/types_sail_trans_out.hgen
+           aarch64_small/gen/types_trans_sail.hgen
+           aarch64_small/mono-splices/ASR_C.sail
+           aarch64_small/mono-splices/BigEndianReverse.sail
+           aarch64_small/mono-splices/CountLeadingSignBits.sail
+           aarch64_small/mono-splices/DecodeBitMasks.sail
+           aarch64_small/mono-splices/LSL_C.sail
+           aarch64_small/mono-splices/LSR_C.sail
+           aarch64_small/mono-splices/Poly32Mod2.sail
+           aarch64_small/mono-splices/Replicate.sail
+           aarch64_small/mono-splices/SignExtend.sail
+           aarch64_small/mono-splices/ZeroExtend.sail
+           aarch64_small/mono-splices/_wMem.sail
+           aarch64_small/mono/ROOT
+           aarch64_small/prelude.sail
+           doc/asciidoc/Makefile
+           doc/asciidoc/introduction.adoc
+           doc/asciidoc/language.adoc
+           doc/asciidoc/manual.adoc
+           doc/asciidoc/riscv.adoc
+           doc/asciidoc/usage.adoc
+           doc/examples/bitfield.sail
+           doc/examples/cannot_wildcard.sail
+           doc/examples/enum.sail
+           doc/examples/enum1.sail
+           doc/examples/enum2.sail
+           doc/examples/exn.sail
+           doc/examples/list.sail
+           doc/examples/my_replicate_bits.sail
+           doc/examples/overload.sail
+           doc/examples/pattern_matching.sail
+           doc/examples/regref.sail
+           doc/examples/struct.sail
+           doc/examples/type_operator.sail
+           doc/examples/zeros.sail
+           doc/extra_lexer_syntax.sed
+           doc/grammar_section.tex
+           doc/internals.md
+           doc/introduction.tex
+           doc/manual.bib
+           doc/manual.tex
+           doc/pandocfix.sed
+           doc/riscv.tex
+           doc/sail-smt.png
+           doc/tutorial.tex
+           doc/types.tex
+           doc/usage.tex
+           docker_entry_point.sh
+           dune-project
+           editors/asl-mode.el
+           editors/html_syntax_highlighting/html_syntax_highlighting.sh
+           editors/html_syntax_highlighting/prism.css
+           editors/html_syntax_highlighting/prism_sail.js
+           editors/vim/ftdetect/sail.vim
+           editors/vscode/README.txt
+           editors/vscode/sail/.vscodeignore
+           editors/vscode/sail/CHANGELOG.md
+           editors/vscode/sail/README.md
+           editors/vscode/sail/images/sail_icon.png
+           editors/vscode/sail/language-configuration.json
+           editors/vscode/sail/package.json
+           editors/vscode/sail/syntaxes/sail.tmLanguage.json
+           etc/ci_core_tests.sh
+           etc/ci_coverage_tests.sh
+           etc/default_config.json
+           etc/headache_config
+           etc/loc.mk
+           etc/logo/LICENSE.md
+           etc/logo/sail_logo.pdf
+           etc/logo/sail_logo.png
+           etc/logo/sail_logo_square.pdf
+           etc/logo/sail_logo_square.png
+           etc/style.css
+           etc/tosail2.perl
+           language/jib.ott
+           language/sail.ott
+           lib/_tags
+           lib/_tags_coverage
+           lib/concurrency_interface.sail
+           lib/coverage/Cargo.toml
+           lib/coverage/Makefile
+           lib/coverage/src/lib.rs
+           lib/hol/.gitignore
+           lib/hol/Holmakefile
+           lib/hol/Makefile
+           lib/hol/sail2_prompt.lem
+           lib/hol/sail2_prompt_monad.lem
+           lib/hol/sail2_stateAuxiliaryScript.sml
+           lib/hol/sail2_undefined.lem
+           lib/hol/sail2_valuesAuxiliaryScript.sml
+           lib/int128/rts.c
+           lib/int128/rts.h
+           lib/int128/sail.c
+           lib/int128/sail.h
+           lib/isabelle/.gitignore
+           lib/isabelle/Add_Cancel_Distinct.thy
+           lib/isabelle/Hoare.thy
+           lib/isabelle/Makefile
+           lib/isabelle/ROOT
+           lib/isabelle/Sail2_concurrency_interface_lemmas.thy
+           lib/isabelle/Sail2_monadic_combinators_lemmas.thy
+           lib/isabelle/Sail2_operators_mwords_lemmas.thy
+           lib/isabelle/Sail2_prompt_monad_lemmas.thy
+           lib/isabelle/Sail2_state_lemmas.thy
+           lib/isabelle/Sail2_state_monad_lemmas.thy
+           lib/isabelle/Sail2_values_lemmas.thy
+           lib/isabelle/Trace_Properties.thy
+           lib/isabelle/document/root.tex
+           lib/isabelle/manual.pdf
+           lib/isabelle/manual/Manual.thy
+           lib/isabelle/manual/ROOT
+           lib/isabelle/manual/document/root.tex
+           lib/main.ml
+           lib/myocamlbuild_coverage.ml
+           lib/nostd/sail.c
+           lib/nostd/sail.h
+           lib/nostd/sail_alloc.h
+           lib/nostd/sail_arena.c
+           lib/nostd/sail_arena.h
+           lib/nostd/sail_failure.h
+           lib/nostd/stubs/sail_failure.c
+           lib/nostd/test/test.c
+           lib/sail.tex
+           lib/sv/sail.sv
+           lib/sv/sail_memory.sv
+           lib/vector_dec.sail
+           lib/vector_inc.sail
+           libsail.opam
+           manual.pdf
+           old/power/Makefile
+           old/power/gen/ast.gen
+           old/power/gen/compile.gen
+           old/power/gen/fold.gen
+           old/power/gen/herdtools_ast_to_shallow_ast.gen
+           old/power/gen/lexer.gen
+           old/power/gen/map.gen
+           old/power/gen/parser.gen
+           old/power/gen/pretty.gen
+           old/power/gen/sail_trans_out.gen
+           old/power/gen/sail_trans_out_types.hgen
+           old/power/gen/shallow_ast_to_herdtools_ast.gen
+           old/power/gen/shallow_types_to_herdtools_types.hgen
+           old/power/gen/tokens.gen
+           old/power/gen/trans_sail.gen
+           old/power/gen/trans_sail_types.hgen
+           old/power/power.sail
+           old/power/power_extras.lem
+           old/power/power_extras_embed.lem
+           old/power/power_extras_embed_sequential.lem
+           old/power/power_regfp.sail
+           old/x86/Makefile
+           old/x86/gen/ast.hgen
+           old/x86/gen/fold.hgen
+           old/x86/gen/herdtools_ast_to_shallow_ast.hgen
+           old/x86/gen/herdtools_types_to_shallow_types.hgen
+           old/x86/gen/lexer.hgen
+           old/x86/gen/lexer_intel.hgen
+           old/x86/gen/map.hgen
+           old/x86/gen/parser.hgen
+           old/x86/gen/parser_intel.hgen
+           old/x86/gen/pretty.hgen
+           old/x86/gen/sail_trans_out.hgen
+           old/x86/gen/shallow_ast_to_herdtools_ast.hgen
+           old/x86/gen/shallow_types_to_herdtools_types.hgen
+           old/x86/gen/token_types.hgen
+           old/x86/gen/tokens.hgen
+           old/x86/gen/trans_sail.hgen
+           old/x86/gen/types.hgen
+           old/x86/gen/types_sail_trans_out.hgen
+           old/x86/gen/types_trans_sail.hgen
+           old/x86/x64.sail
+           old/x86/x86_extras.lem
+           old/x86/x86_extras_embed.lem
+           old/x86/x86_extras_embed_sequential.lem
+           sail
+           sail.opam
+           sail.opam.template
+           sail_c_backend.opam
+           sail_coq_backend.opam
+           sail_doc_backend.opam
+           sail_latex_backend.opam
+           sail_lem_backend.opam
+           sail_manifest.opam
+           sail_ocaml_backend.opam
+           sail_output.opam
+           sail_smt_backend.opam
+           sail_sv_backend.opam
+           sailcov/.ocamlformat
+           sailcov/Makefile
+           sailcov/README.md
+           sailcov/dune
+           sailcov/dune-project
+           sailcov/main.ml
+           snapshots/coq/README.md
+           snapshots/coq/build
+           snapshots/coq/cheri-mips/_CoqProject
+           snapshots/coq/cheri-mips/cheri.v
+           snapshots/coq/cheri-mips/cheri_types.v
+           snapshots/coq/cheri-mips/mips.v
+           snapshots/coq/cheri-mips/mips_extras.v
+           snapshots/coq/cheri-mips/mips_types.v
+           snapshots/coq/clean
+           snapshots/coq/lib/coq/Makefile
+           snapshots/coq/lib/coq/Sail2_impl_base.v
+           snapshots/coq/lib/coq/Sail2_instr_kinds.v
+           snapshots/coq/lib/coq/Sail2_operators.v
+           snapshots/coq/lib/coq/Sail2_operators_bitlists.v
+           snapshots/coq/lib/coq/Sail2_operators_mwords.v
+           snapshots/coq/lib/coq/Sail2_prompt.v
+           snapshots/coq/lib/coq/Sail2_prompt_monad.v
+           snapshots/coq/lib/coq/Sail2_real.v
+           snapshots/coq/lib/coq/Sail2_state.v
+           snapshots/coq/lib/coq/Sail2_state_monad.v
+           snapshots/coq/lib/coq/Sail2_string.v
+           snapshots/coq/lib/coq/Sail2_values.v
+           snapshots/coq/lib/coq/_CoqProject
+           snapshots/coq/riscv/riscv_extras.v
+           snapshots/coq/riscv/riscv_types.v
+           snapshots/hol4/.gitignore
+           snapshots/hol4/README.md
+           snapshots/hol4/build
+           snapshots/hol4/clean
+           snapshots/hol4/lem/hol-lib/Holmakefile
+           snapshots/hol4/lem/hol-lib/lemLib.sml
+           snapshots/hol4/lem/hol-lib/lemScript.sml
+           snapshots/hol4/lem/hol-lib/lem_assert_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_basic_classesScript.sml
+           snapshots/hol4/lem/hol-lib/lem_boolScript.sml
+           snapshots/hol4/lem/hol-lib/lem_eitherScript.sml
+           snapshots/hol4/lem/hol-lib/lem_functionScript.sml
+           snapshots/hol4/lem/hol-lib/lem_function_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_listScript.sml
+           snapshots/hol4/lem/hol-lib/lem_list_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_machine_wordScript.sml
+           snapshots/hol4/lem/hol-lib/lem_mapScript.sml
+           snapshots/hol4/lem/hol-lib/lem_map_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_maybeScript.sml
+           snapshots/hol4/lem/hol-lib/lem_maybe_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_numScript.sml
+           snapshots/hol4/lem/hol-lib/lem_num_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_pervasivesScript.sml
+           snapshots/hol4/lem/hol-lib/lem_pervasives_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_relationScript.sml
+           snapshots/hol4/lem/hol-lib/lem_setScript.sml
+           snapshots/hol4/lem/hol-lib/lem_set_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_set_helpersScript.sml
+           snapshots/hol4/lem/hol-lib/lem_showScript.sml
+           snapshots/hol4/lem/hol-lib/lem_show_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_sortingScript.sml
+           snapshots/hol4/lem/hol-lib/lem_stringScript.sml
+           snapshots/hol4/lem/hol-lib/lem_string_extraScript.sml
+           snapshots/hol4/lem/hol-lib/lem_tupleScript.sml
+           snapshots/hol4/lem/hol-lib/lem_wordScript.sml
+           snapshots/hol4/sail/aarch64/Holmakefile
+           snapshots/hol4/sail/aarch64/aarch64_extrasScript.sml
+           snapshots/hol4/sail/aarch64/aarch64_mono_typesScript.sml
+           snapshots/hol4/sail/cheri/Holmakefile
+           snapshots/hol4/sail/cheri/cheriScript.sml
+           snapshots/hol4/sail/cheri/cheri_typesScript.sml
+           snapshots/hol4/sail/cheri/mips_extrasScript.sml
+           snapshots/hol4/sail/lib/hol/Holmakefile
+           snapshots/hol4/sail/lib/hol/sail2_instr_kindsScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_operatorsScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_operators_bitlistsScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_operators_mwordsScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_promptScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_prompt_monadScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_stateAuxiliaryScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_stateScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_state_monadScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_stringScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_valuesAuxiliaryScript.sml
+           snapshots/hol4/sail/lib/hol/sail2_valuesScript.sml
+           snapshots/hol4/sail/mips/Holmakefile
+           snapshots/hol4/sail/mips/mipsScript.sml
+           snapshots/hol4/sail/mips/mips_extrasScript.sml
+           snapshots/hol4/sail/mips/mips_typesScript.sml
+           snapshots/hol4/sail/riscv/Holmakefile
+           snapshots/hol4/sail/riscv/riscvAuxiliaryScript.sml
+           snapshots/hol4/sail/riscv/riscv_extrasScript.sml
+           snapshots/hol4/sail/riscv/riscv_typesScript.sml
+           snapshots/isabelle/Manual.pdf
+           snapshots/isabelle/Manual.thy
+           snapshots/isabelle/README.md
+           snapshots/isabelle/ROOTS
+           snapshots/isabelle/aarch64/Aarch64_extras.thy
+           snapshots/isabelle/aarch64/Aarch64_lemmas.thy
+           snapshots/isabelle/aarch64/Aarch64_types.thy
+           snapshots/isabelle/aarch64/ROOT
+           snapshots/isabelle/cheri/Cheri.thy
+           snapshots/isabelle/cheri/Cheri_lemmas.thy
+           snapshots/isabelle/cheri/Cheri_types.thy
+           snapshots/isabelle/cheri/Mips_extras.thy
+           snapshots/isabelle/cheri/ROOT
+           snapshots/isabelle/lib/lem/Lem.thy
+           snapshots/isabelle/lib/lem/LemExtraDefs.thy
+           snapshots/isabelle/lib/lem/Lem_assert_extra.thy
+           snapshots/isabelle/lib/lem/Lem_basic_classes.thy
+           snapshots/isabelle/lib/lem/Lem_bool.thy
+           snapshots/isabelle/lib/lem/Lem_either.thy
+           snapshots/isabelle/lib/lem/Lem_function.thy
+           snapshots/isabelle/lib/lem/Lem_function_extra.thy
+           snapshots/isabelle/lib/lem/Lem_list.thy
+           snapshots/isabelle/lib/lem/Lem_list_extra.thy
+           snapshots/isabelle/lib/lem/Lem_machine_word.thy
+           snapshots/isabelle/lib/lem/Lem_map.thy
+           snapshots/isabelle/lib/lem/Lem_map_extra.thy
+           snapshots/isabelle/lib/lem/Lem_maybe.thy
+           snapshots/isabelle/lib/lem/Lem_maybe_extra.thy
+           snapshots/isabelle/lib/lem/Lem_num.thy
+           snapshots/isabelle/lib/lem/Lem_num_extra.thy
+           snapshots/isabelle/lib/lem/Lem_pervasives.thy
+           snapshots/isabelle/lib/lem/Lem_pervasives_extra.thy
+           snapshots/isabelle/lib/lem/Lem_relation.thy
+           snapshots/isabelle/lib/lem/Lem_set.thy
+           snapshots/isabelle/lib/lem/Lem_set_extra.thy
+           snapshots/isabelle/lib/lem/Lem_set_helpers.thy
+           snapshots/isabelle/lib/lem/Lem_show.thy
+           snapshots/isabelle/lib/lem/Lem_show_extra.thy
+           snapshots/isabelle/lib/lem/Lem_sorting.thy
+           snapshots/isabelle/lib/lem/Lem_string.thy
+           snapshots/isabelle/lib/lem/Lem_string_extra.thy
+           snapshots/isabelle/lib/lem/Lem_tuple.thy
+           snapshots/isabelle/lib/lem/Lem_word.thy
+           snapshots/isabelle/lib/lem/ROOT
+           snapshots/isabelle/lib/sail/Hoare.thy
+           snapshots/isabelle/lib/sail/ROOT
+           snapshots/isabelle/lib/sail/Sail2_instr_kinds.thy
+           snapshots/isabelle/lib/sail/Sail2_operators.thy
+           snapshots/isabelle/lib/sail/Sail2_operators_bitlists.thy
+           snapshots/isabelle/lib/sail/Sail2_operators_mwords.thy
+           snapshots/isabelle/lib/sail/Sail2_operators_mwords_lemmas.thy
+           snapshots/isabelle/lib/sail/Sail2_prompt.thy
+           snapshots/isabelle/lib/sail/Sail2_prompt_monad.thy
+           snapshots/isabelle/lib/sail/Sail2_prompt_monad_lemmas.thy
+           snapshots/isabelle/lib/sail/Sail2_state.thy
+           snapshots/isabelle/lib/sail/Sail2_state_lemmas.thy
+           snapshots/isabelle/lib/sail/Sail2_state_lifting.thy
+           snapshots/isabelle/lib/sail/Sail2_state_monad.thy
+           snapshots/isabelle/lib/sail/Sail2_state_monad_lemmas.thy
+           snapshots/isabelle/lib/sail/Sail2_string.thy
+           snapshots/isabelle/lib/sail/Sail2_values.thy
+           snapshots/isabelle/lib/sail/Sail2_values_lemmas.thy
+           snapshots/isabelle/riscv/ROOT
+           snapshots/isabelle/riscv/Riscv_duopod.thy
+           snapshots/isabelle/riscv/Riscv_duopod_lemmas.thy
+           snapshots/isabelle/riscv/Riscv_duopod_types.thy
+           snapshots/isabelle/riscv/Riscv_extras.thy
+           snapshots/isabelle/riscv/Riscv_lemmas.thy
+           snapshots/isabelle/riscv/Riscv_types.thy
+           src/bin/callgraph_commands.ml
+           src/bin/dune
+           src/bin/manifest.ml.in
+           src/bin/repl.ml
+           src/bin/repl.mli
+           src/bin/sail.ml
+           src/gen_lib/sail2_concurrency_interface.lem
+           src/gen_lib/sail2_deep_shallow_convert.lem
+           src/gen_lib/sail2_instr_kinds.lem
+           src/gen_lib/sail2_monadic_combinators.lem
+           src/gen_lib/sail2_operators.lem
+           src/gen_lib/sail2_operators_bitlists.lem
+           src/gen_lib/sail2_operators_mwords.lem
+           src/gen_lib/sail2_prompt.lem
+           src/gen_lib/sail2_prompt_monad.lem
+           src/gen_lib/sail2_state.lem
+           src/gen_lib/sail2_state_lifting.lem
+           src/gen_lib/sail2_state_monad.lem
+           src/gen_lib/sail2_string.lem
+           src/gen_lib/sail2_undefined.lem
+           src/gen_lib/sail2_undefined_concurrency_interface.lem
+           src/gen_lib/sail2_values.lem
+           src/lem_interp/extract.mllib
+           src/lem_interp/instruction_extractor.lem
+           src/lem_interp/interp.lem
+           src/lem_interp/interp_inter_imp.lem
+           src/lem_interp/interp_interface.lem
+           src/lem_interp/interp_lib.lem
+           src/lem_interp/interp_utilities.lem
+           src/lem_interp/pretty_interp.ml
+           src/lem_interp/printing_functions.ml
+           src/lem_interp/printing_functions.mli
+           src/lem_interp/run_interp.ml
+           src/lem_interp/run_interp_model.ml
+           src/lem_interp/run_with_elf.ml
+           src/lem_interp/run_with_elf_cheri.ml
+           src/lem_interp/run_with_elf_cheri128.ml
+           src/lem_interp/sail2_impl_base.lem
+           src/lib/anf.ml
+           src/lib/anf.mli
+           src/lib/ast.sed
+           src/lib/ast_defs.ml
+           src/lib/ast_util.ml
+           src/lib/ast_util.mli
+           src/lib/bitfield.ml
+           src/lib/bitfield.mli
+           src/lib/callgraph.ml
+           src/lib/callgraph.mli
+           src/lib/chunk_ast.ml
+           src/lib/chunk_ast.mli
+           src/lib/constant_fold.ml
+           src/lib/constant_propagation.ml
+           src/lib/constant_propagation.mli
+           src/lib/constant_propagation_mutrec.ml
+           src/lib/constraint.ml
+           src/lib/constraint.mli
+           src/lib/dune
+           src/lib/effects.ml
+           src/lib/effects.mli
+           src/lib/elf_loader.ml
+           src/lib/error_format.ml
+           src/lib/format_sail.ml
+           src/lib/format_sail.mli
+           src/lib/frontend.ml
+           src/lib/frontend.mli
+           src/lib/graph.ml
+           src/lib/graph.mli
+           src/lib/infix_parser.mly
+           src/lib/initial_check.ml
+           src/lib/initial_check.mli
+           src/lib/interactive.ml
+           src/lib/interactive.mli
+           src/lib/interpreter.ml
+           src/lib/jib_compile.ml
+           src/lib/jib_compile.mli
+           src/lib/jib_optimize.ml
+           src/lib/jib_optimize.mli
+           src/lib/jib_util.ml
+           src/lib/jib_util.mli
+           src/lib/jib_visitor.ml
+           src/lib/jib_visitor.mli
+           src/lib/lexer.mll
+           src/lib/mappings.ml
+           src/lib/mappings.mli
+           src/lib/monad_params.ml
+           src/lib/monomorphise.ml
+           src/lib/monomorphise.mli
+           src/lib/nl_flow.ml
+           src/lib/nl_flow.mli
+           src/lib/outcome_rewrites.ml
+           src/lib/parse_ast.ml
+           src/lib/parser_combinators.ml
+           src/lib/pattern_completeness.ml
+           src/lib/pattern_completeness.mli
+           src/lib/preprocess.ml
+           src/lib/preprocess.mli
+           src/lib/pretty_print_common.ml
+           src/lib/pretty_print_sail.ml
+           src/lib/profile.ml
+           src/lib/property.ml
+           src/lib/property.mli
+           src/lib/reporting.ml
+           src/lib/reporting.mli
+           src/lib/rewriter.ml
+           src/lib/rewriter.mli
+           src/lib/rewrites.ml
+           src/lib/rewrites.mli
+           src/lib/sail_lib.ml
+           src/lib/scattered.ml
+           src/lib/smt_exp.ml
+           src/lib/smt_gen.ml
+           src/lib/smt_gen.mli
+           src/lib/spec_analysis.ml
+           src/lib/spec_analysis.mli
+           src/lib/specialize.ml
+           src/lib/specialize.mli
+           src/lib/splice.ml
+           src/lib/state.ml
+           src/lib/target.ml
+           src/lib/target.mli
+           src/lib/type_check.ml
+           src/lib/type_check.mli
+           src/lib/type_env.ml
+           src/lib/type_env.mli
+           src/lib/type_error.ml
+           src/lib/type_error.mli
+           src/lib/type_internal.ml
+           src/lib/util.ml
+           src/lib/util.mli
+           src/lib/value.ml
+           src/lib/value2.lem
+           src/lib/visitor.ml
+           src/sail_c_backend/c_backend.ml
+           src/sail_c_backend/c_backend.mli
+           src/sail_c_backend/dune
+           src/sail_c_backend/sail_plugin_c.ml
+           src/sail_coq_backend/dune
+           src/sail_coq_backend/pretty_print_coq.ml
+           src/sail_coq_backend/sail_plugin_coq.ml
+           src/sail_doc_backend/docinfo.ml
+           src/sail_doc_backend/docinfo.mli
+           src/sail_doc_backend/dune
+           src/sail_doc_backend/markdown.ml
+           src/sail_doc_backend/markdown.mli
+           src/sail_doc_backend/sail_plugin_doc.ml
+           src/sail_doc_backend/wavedrom.ml
+           src/sail_doc_backend/wavedrom.mli
+           src/sail_latex_backend/dune
+           src/sail_latex_backend/latex.ml
+           src/sail_latex_backend/sail_plugin_latex.ml
+           src/sail_lem_backend/dune
+           src/sail_lem_backend/gen_lem_monad.ml
+           src/sail_lem_backend/pretty_print_lem.ml
+           src/sail_lem_backend/sail_plugin_lem.ml
+           src/sail_manifest/dune
+           src/sail_manifest/sail_manifest.ml
+           src/sail_ocaml_backend/dune
+           src/sail_ocaml_backend/ocaml_backend.ml
+           src/sail_ocaml_backend/sail_plugin_ocaml.ml
+           src/sail_ocaml_backend/toFromInterp_backend.ml
+           src/sail_output/dune
+           src/sail_output/sail_plugin_output.ml
+           src/sail_smt_backend/dune
+           src/sail_smt_backend/jib_ir.ml
+           src/sail_smt_backend/jib_smt.ml
+           src/sail_smt_backend/jib_smt.mli
+           src/sail_smt_backend/jib_ssa.ml
+           src/sail_smt_backend/jib_ssa.mli
+           src/sail_smt_backend/sail_plugin_smt.ml
+           src/sail_smt_backend/smtlib.ml
+           src/sail_sv_backend/dune
+           src/sail_sv_backend/generate_primop.ml
+           src/sail_sv_backend/jib_sv.ml
+           src/sail_sv_backend/keywords.ml
+           src/sail_sv_backend/sail_plugin_sv.ml
+           test/aarch64_small/run_tests.sh
+           test/arm/run_tests.sh
+           test/arm/test.elf
+           test/arm/test.expect
+           test/arm/test.isail
+           test/arm/test_O1.elf
+           test/arm/test_O1.expect
+           test/arm/test_O2.elf
+           test/arm/test_O2.expect
+           test/arm/test_Og.elf
+           test/arm/test_Og.expect
+           test/builtins/add_bits.sail
+           test/builtins/append.sail
+           test/builtins/clz.sail
+           test/builtins/count_leading_zeros.sail
+           test/builtins/div_int.sail
+           test/builtins/div_int2.sail
+           test/builtins/divmod.sail
+           test/builtins/get_slice_int.sail
+           test/builtins/hex_str.sail
+           test/builtins/mult_int.sail
+           test/builtins/myocamlbuild.ml
+           test/builtins/not_bool.sail
+           test/builtins/replicate_bits.sail
+           test/builtins/run_tests.py
+           test/builtins/set_slice_bits.sail
+           test/builtins/shift.sail
+           test/builtins/shl_int.sail
+           test/builtins/signed.sail
+           test/builtins/slice_mask.sail
+           test/builtins/sub_int.sail
+           test/builtins/test.v
+           test/builtins/unsigned1.sail
+           test/builtins/unsigned2.sail
+           test/builtins/unsigned3.sail
+           test/builtins/unsigned4.sail
+           test/builtins/unsigned5.sail
+           test/builtins/unsigned6.sail
+           test/builtins/unsigned7.sail
+           test/builtins/unsigned8.sail
+           test/builtins/vector_update.sail
+           test/builtins/vector_update_subrange.sail
+           test/builtins/zeros.sail
+           test/c/all_even_vector_length.expect
+           test/c/all_even_vector_length.sail
+           test/c/and_block.expect
+           test/c/and_block.sail
+           test/c/anf_as_pattern.expect
+           test/c/anf_as_pattern.sail
+           test/c/anf_block.expect
+           test/c/anf_block.sail
+           test/c/anon_rec.expect
+           test/c/anon_rec.sail
+           test/c/assign_rename_bug.expect
+           test/c/assign_rename_bug.sail
+           test/c/bitvector.expect
+           test/c/bitvector.sail
+           test/c/bitvector_update.expect
+           test/c/bitvector_update.sail
+           test/c/bitvector_update2.expect
+           test/c/bitvector_update2.sail
+           test/c/bool_bits_mapping.expect
+           test/c/bool_bits_mapping.sail
+           test/c/bv_literal.expect
+           test/c/bv_literal.sail
+           test/c/cfold_reg.expect
+           test/c/cfold_reg.sail
+           test/c/cheri128_hsb.expect
+           test/c/cheri128_hsb.sail
+           test/c/cheri_capreg.expect
+           test/c/cheri_capreg.sail
+           test/c/cheri_capstruct_order.expect
+           test/c/cheri_capstruct_order.sail
+           test/c/concurrency_interface.expect
+           test/c/concurrency_interface.sail
+           test/c/config.expect
+           test/c/config.sail
+           test/c/config_register.expect
+           test/c/config_register.sail
+           test/c/constructor247.expect
+           test/c/constructor247.sail
+           test/c/custom_flow.expect
+           test/c/custom_flow.sail
+           test/c/dead_branch.expect
+           test/c/dead_branch.sail
+           test/c/double_option.expect
+           test/c/double_option.sail
+           test/c/downcast_fn.expect
+           test/c/downcast_fn.sail
+           test/c/either.expect
+           test/c/either.sail
+           test/c/either_rvbug.expect
+           test/c/either_rvbug.sail
+           test/c/empty_list.expect
+           test/c/empty_list.sail
+           test/c/encdec.expect
+           test/c/encdec.sail
+           test/c/enum_map.expect
+           test/c/enum_map.sail
+           test/c/enum_match.expect
+           test/c/enum_match.sail
+           test/c/enum_tup_match.expect
+           test/c/enum_tup_match.sail
+           test/c/eq_struct.expect
+           test/c/eq_struct.sail
+           test/c/execute.isail
+           test/c/extend_simple.expect
+           test/c/extend_simple.sail
+           test/c/fail_assert_mono_bug.err_expect
+           test/c/fail_assert_mono_bug.expect
+           test/c/fail_assert_mono_bug.sail
+           test/c/fail_exception.err_expect
+           test/c/fail_exception.expect
+           test/c/fail_exception.sail
+           test/c/fail_issue203.err_expect
+           test/c/fail_issue203.expect
+           test/c/fail_issue203.sail
+           test/c/fallthrough_exception.expect
+           test/c/fallthrough_exception.sail
+           test/c/fast_signed.expect
+           test/c/fast_signed.sail
+           test/c/flow_restrict.expect
+           test/c/flow_restrict.sail
+           test/c/for_shadow.expect
+           test/c/for_shadow.sail
+           test/c/foreach_none.expect
+           test/c/foreach_none.sail
+           test/c/fvector_update.expect
+           test/c/fvector_update.sail
+           test/c/get_slice_int.expect
+           test/c/get_slice_int.sail
+           test/c/global_let_shadow.expect
+           test/c/global_let_shadow.sail
+           test/c/gvector.expect
+           test/c/gvector.sail
+           test/c/gvectorlit.expect
+           test/c/gvectorlit.sail
+           test/c/if_opt_typ.expect
+           test/c/if_opt_typ.sail
+           test/c/implicits.expect
+           test/c/implicits.sail
+           test/c/inc_tests.expect
+           test/c/inc_tests.sail
+           test/c/includes/infix_op.sail
+           test/c/includes/xlen_val.h
+           test/c/infix_include.expect
+           test/c/infix_include.sail
+           test/c/int64_vector_literal.expect
+           test/c/int64_vector_literal.sail
+           test/c/int_struct.expect
+           test/c/int_struct.sail
+           test/c/int_struct_constrained.expect
+           test/c/int_struct_constrained.sail
+           test/c/issue136.expect
+           test/c/issue136.sail
+           test/c/issue202_1.expect
+           test/c/issue202_1.sail
+           test/c/issue232.expect
+           test/c/issue232.sail
+           test/c/issue232_2.expect
+           test/c/issue232_2.sail
+           test/c/issue243_fixed.expect
+           test/c/issue243_fixed.sail
+           test/c/issue362.expect
+           test/c/issue362.sail
+           test/c/issue37.expect
+           test/c/issue37.sail
+           test/c/large_bitvector.expect
+           test/c/large_bitvector.sail
+           test/c/lbuild/_tags
+           test/c/lbuild/myocamlbuild.ml
+           test/c/lbuild/undefined_override.lem
+           test/c/lem-ocaml-template.ml
+           test/c/let_option.expect
+           test/c/let_option.sail
+           test/c/letbind.expect
+           test/c/letbind.sail
+           test/c/list_cons_cons.expect
+           test/c/list_cons_cons.sail
+           test/c/list_let.expect
+           test/c/list_let.sail
+           test/c/list_mut.expect
+           test/c/list_mut.sail
+           test/c/list_rec_functions1.expect
+           test/c/list_rec_functions1.sail
+           test/c/list_rec_functions2.expect
+           test/c/list_rec_functions2.sail
+           test/c/list_scope.expect
+           test/c/list_scope.sail
+           test/c/list_scope2.expect
+           test/c/list_scope2.sail
+           test/c/list_scope3.expect
+           test/c/list_scope3.sail
+           test/c/list_test.expect
+           test/c/list_test.sail
+           test/c/list_torture.expect
+           test/c/list_torture.sail
+           test/c/loop_exception.expect
+           test/c/loop_exception.sail
+           test/c/mapping.expect
+           test/c/mapping.sail
+           test/c/mapping_compose.expect
+           test/c/mapping_compose.sail
+           test/c/match_bind.expect
+           test/c/match_bind.sail
+           test/c/mk_coq_main.sh
+           test/c/mk_lem_ocaml_main.sh
+           test/c/nested_fields.expect
+           test/c/nested_fields.sail
+           test/c/nested_mapping.expect
+           test/c/nested_mapping.sail
+           test/c/new_bitfields.expect
+           test/c/new_bitfields.sail
+           test/c/nexp_synonym.expect
+           test/c/nexp_synonym.sail
+           test/c/non_unique.expect
+           test/c/non_unique.sail
+           test/c/nonexistent_pragma.expect
+           test/c/nonexistent_pragma.sail
+           test/c/option.expect
+           test/c/option.sail
+           test/c/option_nest.expect
+           test/c/option_nest.sail
+           test/c/option_option.expect
+           test/c/option_option.sail
+           test/c/outcome_impl.expect
+           test/c/outcome_impl.sail
+           test/c/overload_mapping.expect
+           test/c/overload_mapping.sail
+           test/c/pattern_concat_nest.expect
+           test/c/pattern_concat_nest.sail
+           test/c/pc_no_wildcard.expect
+           test/c/pc_no_wildcard.sail
+           test/c/pointer_assign.expect
+           test/c/pointer_assign.sail
+           test/c/poly_int_record.expect
+           test/c/poly_int_record.sail
+           test/c/poly_mapping.expect
+           test/c/poly_mapping.sail
+           test/c/poly_mapping2.expect
+           test/c/poly_mapping2.sail
+           test/c/poly_outcome.expect
+           test/c/poly_outcome.sail
+           test/c/poly_pair.expect
+           test/c/poly_pair.sail
+           test/c/poly_record.expect
+           test/c/poly_record.sail
+           test/c/poly_simple.expect
+           test/c/poly_simple.sail
+           test/c/poly_tup.expect
+           test/c/poly_tup.sail
+           test/c/poly_union.expect
+           test/c/poly_union.sail
+           test/c/poly_union_rev.expect
+           test/c/poly_union_rev.sail
+           test/c/pow2.expect
+           test/c/pow2.sail
+           test/c/pr194.expect
+           test/c/pr194.sail
+           test/c/prelude.expect
+           test/c/prelude.sail
+           test/c/primop.expect
+           test/c/primop.sail
+           test/c/read_write_ram.expect
+           test/c/read_write_ram.sail
+           test/c/real.expect
+           test/c/real.sail
+           test/c/real_prop.expect
+           test/c/real_prop.sail
+           test/c/reg_32_64.expect
+           test/c/reg_32_64.sail
+           test/c/reg_init_let.expect
+           test/c/reg_init_let.sail
+           test/c/reg_ref.expect
+           test/c/reg_ref.sail
+           test/c/reg_ref_nb.expect
+           test/c/reg_ref_nb.sail
+           test/c/return_leak.expect
+           test/c/return_leak.sail
+           test/c/return_register_ref.expect
+           test/c/return_register_ref.sail
+           test/c/run_tests.py
+           test/c/rv_duopod_bug.expect
+           test/c/rv_duopod_bug.sail
+           test/c/rv_format.expect
+           test/c/rv_format.sail
+           test/c/rv_format2.expect
+           test/c/rv_format2.sail
+           test/c/rv_memop.expect
+           test/c/rv_memop.sail
+           test/c/scattered_mapping.expect
+           test/c/scattered_mapping.sail
+           test/c/shadow_cleanup.expect
+           test/c/shadow_cleanup.sail
+           test/c/shadow_let.expect
+           test/c/shadow_let.sail
+           test/c/short_circuit.expect
+           test/c/short_circuit.sail
+           test/c/single_arg.expect
+           test/c/single_arg.sail
+           test/c/single_guard.expect
+           test/c/single_guard.sail
+           test/c/small_slice.expect
+           test/c/small_slice.sail
+           test/c/special_annot.expect
+           test/c/special_annot.sail
+           test/c/split.expect
+           test/c/split.sail
+           test/c/stack_struct.expect
+           test/c/stack_struct.sail
+           test/c/string_of_bits.expect
+           test/c/string_of_bits.sail
+           test/c/string_of_bits2.expect
+           test/c/string_of_bits2.sail
+           test/c/string_take.expect
+           test/c/string_take.sail
+           test/c/struct.expect
+           test/c/struct.sail
+           test/c/struct_mapping.expect
+           test/c/struct_mapping.sail
+           test/c/struct_pattern.expect
+           test/c/struct_pattern.sail
+           test/c/struct_pattern_partial.expect
+           test/c/struct_pattern_partial.sail
+           test/c/tl_let.expect
+           test/c/tl_let.sail
+           test/c/tl_pat.expect
+           test/c/tl_pat.sail
+           test/c/tl_poly_match.expect
+           test/c/tl_poly_match.sail
+           test/c/toplevel_tyvar.expect
+           test/c/toplevel_tyvar.sail
+           test/c/try_return.expect
+           test/c/try_return.sail
+           test/c/tuple_conversion.expect
+           test/c/tuple_conversion.sail
+           test/c/tuple_fun.expect
+           test/c/tuple_fun.sail
+           test/c/tuple_union.expect
+           test/c/tuple_union.sail
+           test/c/two_mapping.expect
+           test/c/two_mapping.sail
+           test/c/unconstructed_type_mono.expect
+           test/c/unconstructed_type_mono.sail
+           test/c/undefined_nat.expect
+           test/c/undefined_nat.sail
+           test/c/undefined_union.expect
+           test/c/undefined_union.sail
+           test/c/unused_poly_ctor.expect
+           test/c/unused_poly_ctor.sail
+           test/c/varswap.expect
+           test/c/varswap.sail
+           test/c/vector_example.expect
+           test/c/vector_example.sail
+           test/c/vector_subrange_pattern.expect
+           test/c/vector_subrange_pattern.sail
+           test/c/vmatch.expect
+           test/c/vmatch.sail
+           test/c/warl.expect
+           test/c/warl.sail
+           test/c/warl_undef.expect
+           test/c/warl_undef.sail
+           test/c/xlen32.expect
+           test/c/xlen32.sail
+           test/c/xlen_val.expect
+           test/c/xlen_val.sail
+           test/c/zero_length_bv.expect
+           test/c/zero_length_bv.sail
+           test/c/zeros_mapping.expect
+           test/c/zeros_mapping.sail
+           test/cheri/run_tests.sh
+           test/cheri/sim.dtb
+           test/cheri/simboot_128m.sailbin
+           test/coq/pass/ast_with_dep_tuple.sail
+           test/coq/pass/atom.sail
+           test/coq/pass/avoid_lit.sail
+           test/coq/pass/booltyparam.sail
+           test/coq/pass/castunitvec.sail
+           test/coq/pass/clash.sail
+           test/coq/pass/def_type_name_clash.sail
+           test/coq/pass/enummatch.sail
+           test/coq/pass/exatom.sail
+           test/coq/pass/fncasts.sail
+           test/coq/pass/foreach_using_tyvar.sail
+           test/coq/pass/irref.sail
+           test/coq/pass/list_recursion.sail
+           test/coq/pass/local_type_name_clash.sail
+           test/coq/pass/loops_with_rich_var.sail
+           test/coq/pass/mono_rewrites.sail
+           test/coq/pass/mutrec.sail
+           test/coq/pass/non_exh_exc.sail
+           test/coq/pass/rangepair.sail
+           test/coq/pass/rangetest.sail
+           test/coq/pass/rebind.sail
+           test/coq/pass/returnwithfact.sail
+           test/coq/pass/simple_string_mapping.sail
+           test/coq/pass/throw_fact.sail
+           test/coq/pass/unbound_ex_tyvars.sail
+           test/coq/pass/unpacking.sail
+           test/coq/pass/var_type_autocast.sail
+           test/coq/pass/while_MM_terminating.sail
+           test/coq/pass/while_MP_terminating.sail
+           test/coq/pass/while_PM_terminating.sail
+           test/coq/pass/while_PP_terminating.sail
+           test/coq/pass/wildcardmerge.sail
+           test/coq/run_tests.sh
+           test/coq/skip
+           test/format/block.sail
+           test/format/can_hang.sail
+           test/format/default/block.expect
+           test/format/default/can_hang.expect
+           test/format/default/config.json
+           test/format/default/function_quant.expect
+           test/format/default/patterns.expect
+           test/format/default/set_syntax.expect
+           test/format/default/struct_update.expect
+           test/format/default/test_if_comment_1.expect
+           test/format/default/val.expect
+           test/format/function_quant.sail
+           test/format/patterns.sail
+           test/format/run_tests.py
+           test/format/set_syntax.sail
+           test/format/struct_update.sail
+           test/format/test_if_comment_1.sail
+           test/format/val.sail
+           test/hol/Holmakefile
+           test/hol/hoareScript.sml
+           test/hol/state_monad_lemmasScript.sml
+           test/hol/test_raw_addScript.sml
+           test/interactive/pass/slice.sail
+           test/interactive/pass/slice1.expected
+           test/interactive/pass/slice1.isail
+           test/interactive/pass/slice2.expected
+           test/interactive/pass/slice2.isail
+           test/interactive/pass/slice3.expected
+           test/interactive/pass/slice3.isail
+           test/interactive/pass/slice4.expected
+           test/interactive/pass/slice4.isail
+           test/interactive/run_tests.sh
+           test/interactive/update_expected.sh
+           test/isabelle/Aarch64_code.thy
+           test/isabelle/Cheri_code.thy
+           test/isabelle/Makefile
+           test/isabelle/ROOT
+           test/isabelle/elf_loader.ml
+           test/isabelle/run_aarch64.ml
+           test/isabelle/run_cheri.ml
+           test/isabelle/run_tests.sh
+           test/latex/bitfield.sail
+           test/latex/bitfield.typezcapcausereg4dd1a4671e3fabc92350ed31d9f5303e.tex.exp
+           test/latex/candperm.commands.tex.exp
+           test/latex/candperm.sail
+           test/latex/let.commands.tex.exp
+           test/latex/let.sail
+           test/latex/main.tex
+           test/latex/reference-type.commands.tex.exp
+           test/latex/reference-type.sail
+           test/latex/reg.commands.tex.exp
+           test/latex/reg.sail
+           test/latex/run_tests.sh
+           test/lem/run_tests.py
+           test/lexing/bad_option_pragma.expect
+           test/lexing/bad_option_pragma.sail
+           test/lexing/bad_option_pragma2.expect
+           test/lexing/bad_option_pragma2.sail
+           test/lexing/cr_invisible.expect
+           test/lexing/cr_invisible.sail
+           test/lexing/doc_comment_eof.expect
+           test/lexing/doc_comment_eof.sail
+           test/lexing/extended_ascii.expect
+           test/lexing/extended_ascii.sail
+           test/lexing/help_option_pragma.expect
+           test/lexing/help_option_pragma.sail
+           test/lexing/illegal_escape.expect
+           test/lexing/illegal_escape.sail
+           test/lexing/import_reserved.expect
+           test/lexing/import_reserved.sail
+           test/lexing/line_comment_eof.expect
+           test/lexing/line_comment_eof.sail
+           test/lexing/module_reserved.expect
+           test/lexing/module_reserved.sail
+           test/lexing/pragma_block.expect
+           test/lexing/pragma_block.sail
+           test/lexing/run_tests.py
+           test/lexing/unbalanced_comment.expect
+           test/lexing/unbalanced_comment.sail
+           test/lexing/unbalanced_comment2.expect
+           test/lexing/unbalanced_comment2.sail
+           test/lexing/unknown_operator.expect
+           test/lexing/unknown_operator.sail
+           test/lexing/unterminated_ifdef.expect
+           test/lexing/unterminated_ifdef.sail
+           test/lexing/unterminated_string.expect
+           test/lexing/unterminated_string.sail
+           test/lexing/update_errors.sh
+           test/mono/assert.sail
+           test/mono/assert2.sail
+           test/mono/assign_range.sail
+           test/mono/atomsplit.sail
+           test/mono/builtins.sail
+           test/mono/castreq.mk
+           test/mono/castreq.sail
+           test/mono/castrequnion.sail
+           test/mono/control_deps.sail
+           test/mono/exint.sail
+           test/mono/feature.sail
+           test/mono/flow_extend.sail
+           test/mono/fnreduce.sail
+           test/mono/fsplitsign.sail
+           test/mono/itself_rewriting.sail
+           test/mono/letsplit.sail
+           test/mono/mapping.sail
+           test/mono/mutrecmono.sail
+           test/mono/nonlinearpat.sail
+           test/mono/not-yet/feature
+           test/mono/not-yet/fnreduce
+           test/mono/not-yet/fnreduce_manual
+           test/mono/parameterchoice.sail
+           test/mono/pass/assert
+           test/mono/pass/assert2
+           test/mono/pass/assign_range
+           test/mono/pass/atomsplit
+           test/mono/pass/builtins
+           test/mono/pass/castreq
+           test/mono/pass/castrequnion
+           test/mono/pass/control_deps
+           test/mono/pass/exint
+           test/mono/pass/feature_no_effects
+           test/mono/pass/flow_extend
+           test/mono/pass/fsplitsign
+           test/mono/pass/itself_rewriting
+           test/mono/pass/letsplit
+           test/mono/pass/mapping
+           test/mono/pass/mutrecmono
+           test/mono/pass/nonlinearpat
+           test/mono/pass/parameterchoice
+           test/mono/pass/repeatedint
+           test/mono/pass/rewrites
+           test/mono/pass/set
+           test/mono/pass/set3
+           test/mono/pass/splitreturn
+           test/mono/pass/structparam2
+           test/mono/pass/time8_continue
+           test/mono/pass/times8
+           test/mono/pass/times8div8
+           test/mono/pass/union-exist
+           test/mono/pass/union-exist2
+           test/mono/pass/union-exist_manual
+           test/mono/pass/union_split
+           test/mono/pass/varmatch
+           test/mono/pass/varmatch_manual
+           test/mono/pass/varpatterns
+           test/mono/pass/vector
+           test/mono/pass/vector_manual
+           test/mono/pass/vectorsize
+           test/mono/repeatedint.sail
+           test/mono/rewrites.sail
+           test/mono/run_tests.sh
+           test/mono/set.sail
+           test/mono/set2.sail
+           test/mono/set3.sail
+           test/mono/splitreturn.sail
+           test/mono/structparam.sail
+           test/mono/structparam2.sail
+           test/mono/test.ml
+           test/mono/test_extra.lem
+           test/mono/test_with_state.ml
+           test/mono/tests
+           test/mono/times8.sail
+           test/mono/times8div8.sail
+           test/mono/union-exist.sail
+           test/mono/union-exist2.sail
+           test/mono/union_split.sail
+           test/mono/varmatch.sail
+           test/mono/varpatterns.sail
+           test/mono/vector.sail
+           test/mono/vectorsize.sail
+           test/ocaml/bitfield/bitfield.sail
+           test/ocaml/bitfield/expect
+           test/ocaml/bitfield/test.isail
+           test/ocaml/for_bounds/expect
+           test/ocaml/for_bounds/for_bounds.sail
+           test/ocaml/for_bounds/test.isail
+           test/ocaml/hello_world/expect
+           test/ocaml/hello_world/hello_world.sail
+           test/ocaml/hello_world/test.isail
+           test/ocaml/is_x_subrange/expect
+           test/ocaml/is_x_subrange/is_x_subrange.sail
+           test/ocaml/is_x_subrange/test.isail
+           test/ocaml/loop/expect
+           test/ocaml/loop/loop.sail
+           test/ocaml/loop/test.isail
+           test/ocaml/lsl/expect
+           test/ocaml/lsl/lsl.sail
+           test/ocaml/lsl/test.isail
+           test/ocaml/new_bitfields/expect
+           test/ocaml/new_bitfields/new_bitfields.sail
+           test/ocaml/new_bitfields/test.isail
+           test/ocaml/pattern1/expect
+           test/ocaml/pattern1/pattern.sail
+           test/ocaml/pattern1/test.isail
+           test/ocaml/prelude.sail
+           test/ocaml/pure_rebind/expect
+           test/ocaml/pure_rebind/pure_rebind.sail
+           test/ocaml/reg_alias/expect
+           test/ocaml/reg_alias/ra.sail
+           test/ocaml/reg_alias/test.isail
+           test/ocaml/reg_passing/expect
+           test/ocaml/reg_passing/reg_passing.sail
+           test/ocaml/reg_passing/test.isail
+           test/ocaml/reg_ref/expect
+           test/ocaml/reg_ref/rr.sail
+           test/ocaml/reg_ref/test.isail
+           test/ocaml/run_tests.sh
+           test/ocaml/short_circuit/expect
+           test/ocaml/short_circuit/sc.sail
+           test/ocaml/short_circuit/test.isail
+           test/ocaml/string_equality/expect
+           test/ocaml/string_equality/string_equality.sail
+           test/ocaml/string_equality/test.isail
+           test/ocaml/string_of_struct/expect
+           test/ocaml/string_of_struct/sos.sail
+           test/ocaml/string_of_struct/test.isail
+           test/ocaml/trycatch/expect
+           test/ocaml/trycatch/tc.sail
+           test/ocaml/trycatch/test.isail
+           test/ocaml/types/expect
+           test/ocaml/types/test.isail
+           test/ocaml/types/types.sail
+           test/ocaml/vec_32_64/expect
+           test/ocaml/vec_32_64/test.isail
+           test/ocaml/vec_32_64/vec_32_64.sail
+           test/ocaml/void/expect
+           test/ocaml/void/test.isail
+           test/ocaml/void/void.sail
+           test/pattern_completeness/cons_wildcard_insert.sail
+           test/pattern_completeness/constrained_function.sail
+           test/pattern_completeness/constrained_function_scattered.sail
+           test/pattern_completeness/int_pattern.sail
+           test/pattern_completeness/lookup.sail
+           test/pattern_completeness/no_error
+           test/pattern_completeness/range.sail
+           test/pattern_completeness/run_tests.py
+           test/pattern_completeness/some_none.sail
+           test/pattern_completeness/some_none_int.sail
+           test/pattern_completeness/struct_pattern.sail
+           test/pattern_completeness/two_argument.sail
+           test/pattern_completeness/unbounded_int_annot.sail
+           test/pattern_completeness/warn_cannot_wildcard.expect
+           test/pattern_completeness/warn_cannot_wildcard.sail
+           test/pattern_completeness/warn_cons_incomplete.expect
+           test/pattern_completeness/warn_cons_incomplete.sail
+           test/pattern_completeness/warn_cons_wildcard_insert1.expect
+           test/pattern_completeness/warn_cons_wildcard_insert1.sail
+           test/pattern_completeness/warn_cons_wildcard_insert2.expect
+           test/pattern_completeness/warn_cons_wildcard_insert2.sail
+           test/pattern_completeness/warn_double_cons_incomplete.expect
+           test/pattern_completeness/warn_double_cons_incomplete.sail
+           test/pattern_completeness/warn_empty_list.expect
+           test/pattern_completeness/warn_empty_list.sail
+           test/pattern_completeness/warn_int_pattern.expect
+           test/pattern_completeness/warn_int_pattern.sail
+           test/pattern_completeness/warn_missing_enum.expect
+           test/pattern_completeness/warn_missing_enum.sail
+           test/pattern_completeness/warn_partial_lookup.expect
+           test/pattern_completeness/warn_partial_lookup.sail
+           test/pattern_completeness/warn_partial_scattered.expect
+           test/pattern_completeness/warn_partial_scattered.sail
+           test/pattern_completeness/warn_range_redundant.expect
+           test/pattern_completeness/warn_range_redundant.sail
+           test/pattern_completeness/warn_struct_pattern_incomplete.expect
+           test/pattern_completeness/warn_struct_pattern_incomplete.sail
+           test/pattern_completeness/warn_tuple_bitvector_pat.expect
+           test/pattern_completeness/warn_tuple_bitvector_pat.sail
+           test/pattern_completeness/warn_unbounded_int.expect
+           test/pattern_completeness/warn_unbounded_int.sail
+           test/pattern_completeness/warn_unbounded_nat.expect
+           test/pattern_completeness/warn_unbounded_nat.sail
+           test/run_core_tests.sh
+           test/run_coverage_tests.sh
+           test/run_tests.sh
+           test/sailtest.py
+           test/smt/add_overflow.sat.sail
+           test/smt/add_overflow.unsat.sail
+           test/smt/arith.unsat.sail
+           test/smt/arith_C128FL.unsat.sail
+           test/smt/arith_C64C32CB.unsat.sail
+           test/smt/arith_FFL_1.unsat.sail
+           test/smt/arith_FFL_2.unsat.sail
+           test/smt/arith_FFL_3.unsat.sail
+           test/smt/arith_FFL_4.unsat.sail
+           test/smt/arith_FFL_5.unsat.sail
+           test/smt/arith_LC32L.unsat.sail
+           test/smt/arith_LC32L_1.unsat.sail
+           test/smt/arith_LC32L_2.unsat.sail
+           test/smt/arith_LC32L_3.unsat.sail
+           test/smt/arith_LC32L_4.unsat.sail
+           test/smt/arith_LCBL.unsat.sail
+           test/smt/arith_LFL.unsat.sail
+           test/smt/assembly_mapping.sat.sail
+           test/smt/basic_1.sat.sail
+           test/smt/basic_1.unsat.sail
+           test/smt/basic_2.sat.sail
+           test/smt/basic_2.unsat.sail
+           test/smt/ccheri_regression1.unsat.sail
+           test/smt/clear_overflow_regression.unsat.sail
+           test/smt/concat_prop.unsat.sail
+           test/smt/concat_prop128.unsat.sail
+           test/smt/encdec.sat.sail
+           test/smt/exception.unsat.sail
+           test/smt/exception_2.unsat.sail
+           test/smt/exception_3.unsat.sail
+           test/smt/foreach_simple.unsat.sail
+           test/smt/foreach_simple_2.unsat.sail
+           test/smt/gvector.unsat.sail
+           test/smt/gvector_trivial.unsat.sail
+           test/smt/inline_regression.unsat.sail
+           test/smt/inline_test_1.unsat.sail
+           test/smt/let_intervene.unsat.sail
+           test/smt/load_store_dep.sat.sail
+           test/smt/lt_int_irrefl.unsat.sail
+           test/smt/lt_int_trans.unsat.sail
+           test/smt/lteq_int_antisym.unsat.sail
+           test/smt/lteq_int_def.unsat.sail
+           test/smt/lteq_int_refl.unsat.sail
+           test/smt/lteq_int_trans.unsat.sail
+           test/smt/lzcnt.unsat.sail
+           test/smt/lzcnt_2.unsat.sail
+           test/smt/lzcnt_3.unsat.sail
+           test/smt/match_fail.sat.sail
+           test/smt/match_fail_query_1.sat.sail
+           test/smt/match_fail_query_2.sat.sail
+           test/smt/mem_builtins.unsat.sail
+           test/smt/minmax.unsat.sail
+           test/smt/minmax_1.sat.sail
+           test/smt/minmax_2.sat.sail
+           test/smt/order.unsat.sail
+           test/smt/real.unsat.sail
+           test/smt/reg_ref.unsat.sail
+           test/smt/revrev_endianness.unsat.sail
+           test/smt/revrev_endianness2.unsat.sail
+           test/smt/run_tests.py
+           test/smt/rv_add_0.sat.sail
+           test/smt/rv_add_0.unsat.sail
+           test/smt/rv_add_1.sat.sail
+           test/smt/rv_add_1.unsat.sail
+           test/smt/rv_add_decode.unsat.sail
+           test/smt/rv_reg_rw.unsat.sail
+           test/smt/sail_mask.unsat.sail
+           test/smt/sail_mask_2.unsat.sail
+           test/smt/sail_mask_3.unsat.sail
+           test/smt/sail_mask_4.unsat.sail
+           test/smt/sail_mask_5.unsat.sail
+           test/smt/shift_or_concat.unsat.sail
+           test/smt/shift_or_concat128.unsat.sail
+           test/smt/shift_or_concat4.unsat.sail
+           test/smt/shift_or_concat4_2.unsat.sail
+           test/smt/shift_or_concat_1.sat.sail
+           test/smt/shift_or_concat_2.sat.sail
+           test/smt/shiftr_zero_1.sat.sail
+           test/smt/shiftr_zero_1.unsat.sail
+           test/smt/sign_extend.unsat.sail
+           test/smt/sign_extend_2.unsat.sail
+           test/smt/sqrt.sat.sail
+           test/smt/sqrt.unsat.sail
+           test/smt/store_load.sat.sail
+           test/smt/store_load_scattered.sat.sail
+           test/smt/string.sat.sail
+           test/smt/string.unsat.sail
+           test/smt/test/arch.sail
+           test/smt/tl_let_shadow.sat.sail
+           test/smt/toplevel_let.unsat.sail
+           test/smt/toplevel_let_trivial.unsat.sail
+           test/smt/trivial.sat.sail
+           test/smt/trivial.unsat.sail
+           test/smt/trivial_assert.sat.sail
+           test/smt/trivial_assert_2.unsat.sail
+           test/smt/trivial_funcall.sat.sail
+           test/smt/trivial_return.sat.sail
+           test/smt/trivial_return.unsat.sail
+           test/smt/update_access.unsat.sail
+           test/smt/update_subrange.unsat.sail
+           test/smt/write_ref.sat.sail
+           test/smt/write_ref.unsat.sail
+           test/smt/zeros_1.sat.sail
+           test/smt/zeros_1.unsat.sail
+           test/smt/zeros_2.sat.sail
+           test/smt/zeros_2.unsat.sail
+           test/smt/zeros_3.sat.sail
+           test/smt/zeros_3.unsat.sail
+           test/smt/zeros_4.unsat.sail
+           test/smt/zeros_ones.unsat.sail
+           test/sv/run_tests.py
+           test/test_helpers.sh
+           test/typecheck/fail/add_vec_lit_old.expect
+           test/typecheck/fail/add_vec_lit_old.sail
+           test/typecheck/fail/and_let_bool.expect
+           test/typecheck/fail/and_let_bool.sail
+           test/typecheck/fail/assignment_simple.expect
+           test/typecheck/fail/assignment_simple.sail
+           test/typecheck/fail/duplicate_binding.expect
+           test/typecheck/fail/duplicate_binding.sail
+           test/typecheck/fail/duplicate_builtin.expect
+           test/typecheck/fail/duplicate_builtin.sail
+           test/typecheck/fail/duplicate_ctor.expect
+           test/typecheck/fail/duplicate_ctor.sail
+           test/typecheck/fail/duplicate_toplevel_let.expect
+           test/typecheck/fail/duplicate_toplevel_let.sail
+           test/typecheck/fail/duplicate_type_id.expect
+           test/typecheck/fail/duplicate_type_id.sail
+           test/typecheck/fail/duplicate_type_id2.expect
+           test/typecheck/fail/duplicate_type_id2.sail
+           test/typecheck/fail/duplicate_type_id3.expect
+           test/typecheck/fail/duplicate_type_id3.sail
+           test/typecheck/fail/duplicate_type_id4.expect
+           test/typecheck/fail/duplicate_type_id4.sail
+           test/typecheck/fail/duplicate_type_id5.expect
+           test/typecheck/fail/duplicate_type_id5.sail
+           test/typecheck/fail/duplicate_type_id6.expect
+           test/typecheck/fail/duplicate_type_id6.sail
+           test/typecheck/fail/empty_su.expect
+           test/typecheck/fail/empty_su.sail
+           test/typecheck/fail/empty_vector_infer.expect
+           test/typecheck/fail/empty_vector_infer.sail
+           test/typecheck/fail/issue243.expect
+           test/typecheck/fail/issue243.sail
+           test/typecheck/fail/issue244_1.expect
+           test/typecheck/fail/issue244_1.sail
+           test/typecheck/fail/issue244_2.expect
+           test/typecheck/fail/issue244_2.sail
+           test/typecheck/fail/issue244_3.expect
+           test/typecheck/fail/issue244_3.sail
+           test/typecheck/fail/issue244_4.expect
+           test/typecheck/fail/issue244_4.sail
+           test/typecheck/fail/issue277.expect
+           test/typecheck/fail/issue277.sail
+           test/typecheck/fail/missing_tick.expect
+           test/typecheck/fail/missing_tick.sail
+           test/typecheck/fail/mix_declaration_update.expect
+           test/typecheck/fail/mix_declaration_update.sail
+           test/typecheck/fail/modify_enum.expect
+           test/typecheck/fail/modify_enum.sail
+           test/typecheck/fail/modify_enum2.expect
+           test/typecheck/fail/modify_enum2.sail
+           test/typecheck/fail/modify_immutable.expect
+           test/typecheck/fail/modify_immutable.sail
+           test/typecheck/fail/modify_immutable2.expect
+           test/typecheck/fail/modify_immutable2.sail
+           test/typecheck/fail/negative_bits_existential.expect
+           test/typecheck/fail/negative_bits_existential.sail
+           test/typecheck/fail/negative_bits_struct.expect
+           test/typecheck/fail/negative_bits_struct.sail
+           test/typecheck/fail/negative_bits_struct2.expect
+           test/typecheck/fail/negative_bits_struct2.sail
+           test/typecheck/fail/negative_bits_tuple.expect
+           test/typecheck/fail/negative_bits_tuple.sail
+           test/typecheck/fail/negative_bits_union.expect
+           test/typecheck/fail/negative_bits_union.sail
+           test/typecheck/fail/non_synonym.expect
+           test/typecheck/fail/non_synonym.sail
+           test/typecheck/fail/nonexistent_overload.expect
+           test/typecheck/fail/nonexistent_overload.sail
+           test/typecheck/fail/scattered_union_rec.expect
+           test/typecheck/fail/scattered_union_rec.sail
+           test/typecheck/fail/shadow_leak_check.expect
+           test/typecheck/fail/shadow_leak_check.sail
+           test/typecheck/fail/shadow_leak_infer.expect
+           test/typecheck/fail/shadow_leak_infer.sail
+           test/typecheck/fail/strict_var.expect
+           test/typecheck/fail/strict_var.sail
+           test/typecheck/fail/struct_incomplete_literal.expect
+           test/typecheck/fail/struct_incomplete_literal.sail
+           test/typecheck/fail/struct_pattern_duplicate_field.expect
+           test/typecheck/fail/struct_pattern_duplicate_field.sail
+           test/typecheck/fail/struct_rec.expect
+           test/typecheck/fail/struct_rec.sail
+           test/typecheck/fail/synonym_rec.expect
+           test/typecheck/fail/synonym_rec.sail
+           test/typecheck/fail/unbound_tyvar.expect
+           test/typecheck/fail/unbound_tyvar.sail
+           test/typecheck/fail/unbound_tyvar2.expect
+           test/typecheck/fail/unbound_tyvar2.sail
+           test/typecheck/fail/undeclared_field_assignment.expect
+           test/typecheck/fail/undeclared_field_assignment.sail
+           test/typecheck/fail/undeclared_vector_assignment.expect
+           test/typecheck/fail/undeclared_vector_assignment.sail
+           test/typecheck/fail/undefined_infer.expect
+           test/typecheck/fail/undefined_infer.sail
+           test/typecheck/fail/union_rec.expect
+           test/typecheck/fail/union_rec.sail
+           test/typecheck/fail/union_recf.expect
+           test/typecheck/fail/union_recf.sail
+           test/typecheck/fail/vector_pattern_split.expect
+           test/typecheck/fail/vector_pattern_split.sail
+           test/typecheck/pass/Replicate.sail
+           test/typecheck/pass/Replicate/v1.expect
+           test/typecheck/pass/Replicate/v1.sail
+           test/typecheck/pass/Replicate/v2.expect
+           test/typecheck/pass/Replicate/v2.sail
+           test/typecheck/pass/add_real.sail
+           test/typecheck/pass/add_vec_exts_no_annot.sail
+           test/typecheck/pass/add_vec_exts_no_annot_overload.sail
+           test/typecheck/pass/add_vec_lit.sail
+           test/typecheck/pass/allpats.sail
+           test/typecheck/pass/anon_rec.sail
+           test/typecheck/pass/arm_FPEXC1.sail
+           test/typecheck/pass/arm_types.sail
+           test/typecheck/pass/as_pattern.sail
+           test/typecheck/pass/assignment_simple.sail
+           test/typecheck/pass/atomcase.sail
+           test/typecheck/pass/bind_typ_var.sail
+           test/typecheck/pass/bind_typ_var/v1.expect
+           test/typecheck/pass/bind_typ_var/v1.sail
+           test/typecheck/pass/bitfield_pc.sail
+           test/typecheck/pass/bitfield_updates.sail
+           test/typecheck/pass/bitfield_updates0.sail
+           test/typecheck/pass/bits_concat_pattern.sail
+           test/typecheck/pass/bitvector_param.sail
+           test/typecheck/pass/bitwise_not.sail
+           test/typecheck/pass/bitwise_not_gen.sail
+           test/typecheck/pass/bitwise_not_x3.sail
+           test/typecheck/pass/bool_bits_mapping.sail
+           test/typecheck/pass/bool_constraint.sail
+           test/typecheck/pass/bool_constraint/v1.expect
+           test/typecheck/pass/bool_constraint/v1.sail
+           test/typecheck/pass/bool_constraint/v2.expect
+           test/typecheck/pass/bool_constraint/v2.sail
+           test/typecheck/pass/bool_constraint/v3.expect
+           test/typecheck/pass/bool_constraint/v3.sail
+           test/typecheck/pass/bool_constraint/v4.expect
+           test/typecheck/pass/bool_constraint/v4.sail
+           test/typecheck/pass/bool_typ_pat.sail
+           test/typecheck/pass/bool_typ_pat/v1.expect
+           test/typecheck/pass/bool_typ_pat/v1.sail
+           test/typecheck/pass/bv_simple_index_bit.sail
+           test/typecheck/pass/case_simple1.sail
+           test/typecheck/pass/case_simple2.sail
+           test/typecheck/pass/cast_lexp1.sail
+           test/typecheck/pass/cast_lexp2.sail
+           test/typecheck/pass/cast_simple.sail
+           test/typecheck/pass/commentfix.sail
+           test/typecheck/pass/complete_pattern_let.sail
+           test/typecheck/pass/complex_exist_sat.sail
+           test/typecheck/pass/complex_exist_sat/v1.expect
+           test/typecheck/pass/complex_exist_sat/v1.sail
+           test/typecheck/pass/complex_exist_sat/v2.expect
+           test/typecheck/pass/complex_exist_sat/v2.sail
+           test/typecheck/pass/concurrency_interface_dec.sail
+           test/typecheck/pass/concurrency_interface_inc.sail
+           test/typecheck/pass/cons_pattern.sail
+           test/typecheck/pass/cons_pattern_synonym.sail
+           test/typecheck/pass/constrained_struct.sail
+           test/typecheck/pass/constrained_struct/v1.expect
+           test/typecheck/pass/constrained_struct/v1.sail
+           test/typecheck/pass/constraint_ctor.sail
+           test/typecheck/pass/constraint_ctor/v1.expect
+           test/typecheck/pass/constraint_ctor/v1.sail
+           test/typecheck/pass/constraint_ctor/v2.expect
+           test/typecheck/pass/constraint_ctor/v2.sail
+           test/typecheck/pass/constraint_ctor/v3.expect
+           test/typecheck/pass/constraint_ctor/v3.sail
+           test/typecheck/pass/constraint_ctor/v4.expect
+           test/typecheck/pass/constraint_ctor/v4.sail
+           test/typecheck/pass/constraint_ctor/v5.expect
+           test/typecheck/pass/constraint_ctor/v5.sail
+           test/typecheck/pass/crlf.sail
+           test/typecheck/pass/custom_flow.sail
+           test/typecheck/pass/dec_prelude.sail
+           test/typecheck/pass/decode_patterns.sail
+           test/typecheck/pass/default_order.sail
+           test/typecheck/pass/deinfix_plus.sail
+           test/typecheck/pass/enum_cast.sail
+           test/typecheck/pass/enum_map.sail
+           test/typecheck/pass/enum_map/v1.expect
+           test/typecheck/pass/enum_map/v1.sail
+           test/typecheck/pass/enum_map/v2.expect
+           test/typecheck/pass/enum_map/v2.sail
+           test/typecheck/pass/enum_map/v3.expect
+           test/typecheck/pass/enum_map/v3.sail
+           test/typecheck/pass/enum_map/v4.expect
+           test/typecheck/pass/enum_map/v4.sail
+           test/typecheck/pass/enum_map/v5.expect
+           test/typecheck/pass/enum_map/v5.sail
+           test/typecheck/pass/eqn_inst.sail
+           test/typecheck/pass/equation_arguments.sail
+           test/typecheck/pass/equation_return.sail
+           test/typecheck/pass/ex_cast.sail
+           test/typecheck/pass/execute_decode_hard.sail
+           test/typecheck/pass/exint.sail
+           test/typecheck/pass/exist1.sail
+           test/typecheck/pass/exist2.sail
+           test/typecheck/pass/exist_simple.sail
+           test/typecheck/pass/exist_subrange.sail
+           test/typecheck/pass/exist_synonym.sail
+           test/typecheck/pass/exist_synonym/v1.expect
+           test/typecheck/pass/exist_synonym/v1.sail
+           test/typecheck/pass/exist_synonym/v2.expect
+           test/typecheck/pass/exist_synonym/v2.sail
+           test/typecheck/pass/exist_synonym/v3.expect
+           test/typecheck/pass/exist_synonym/v3.sail
+           test/typecheck/pass/exist_synonym/v4.expect
+           test/typecheck/pass/exist_synonym/v4.sail
+           test/typecheck/pass/exist_tlb.sail
+           test/typecheck/pass/exist_true.sail
+           test/typecheck/pass/existential_ast.sail
+           test/typecheck/pass/existential_ast/v1.expect
+           test/typecheck/pass/existential_ast/v1.sail
+           test/typecheck/pass/existential_ast/v2.expect
+           test/typecheck/pass/existential_ast/v2.sail
+           test/typecheck/pass/existential_ast/v3.expect
+           test/typecheck/pass/existential_ast/v3.sail
+           test/typecheck/pass/existential_ast2.sail
+           test/typecheck/pass/existential_ast3.sail
+           test/typecheck/pass/existential_ast3/v1.expect
+           test/typecheck/pass/existential_ast3/v1.sail
+           test/typecheck/pass/existential_ast3/v2.expect
+           test/typecheck/pass/existential_ast3/v2.sail
+           test/typecheck/pass/existential_ast3/v3.expect
+           test/typecheck/pass/existential_ast3/v3.sail
+           test/typecheck/pass/existential_ast3/v4.expect
+           test/typecheck/pass/existential_ast3/v4.sail
+           test/typecheck/pass/existential_ast3/v5.expect
+           test/typecheck/pass/existential_ast3/v5.sail
+           test/typecheck/pass/existential_ast3/v6.expect
+           test/typecheck/pass/existential_ast3/v6.sail
+           test/typecheck/pass/existential_constraint_synonym.sail
+           test/typecheck/pass/exit1.sail
+           test/typecheck/pass/exit2.sail
+           test/typecheck/pass/exit3.sail
+           test/typecheck/pass/floor_pow2.sail
+           test/typecheck/pass/flow_gt1.sail
+           test/typecheck/pass/flow_gteq1.sail
+           test/typecheck/pass/flow_lt1.sail
+           test/typecheck/pass/flow_lt2.sail
+           test/typecheck/pass/flow_lteq1.sail
+           test/typecheck/pass/foreach_e.sail
+           test/typecheck/pass/foreach_var_updates.sail
+           test/typecheck/pass/fpthreesimp.sail
+           test/typecheck/pass/funcl_guard.sail
+           test/typecheck/pass/function_namespace.sail
+           test/typecheck/pass/function_namespace/v1.expect
+           test/typecheck/pass/function_namespace/v1.sail
+           test/typecheck/pass/global_type_var.sail
+           test/typecheck/pass/global_type_var/v1.expect
+           test/typecheck/pass/global_type_var/v1.sail
+           test/typecheck/pass/global_type_var/v2.expect
+           test/typecheck/pass/global_type_var/v2.sail
+           test/typecheck/pass/global_type_var/v3.expect
+           test/typecheck/pass/global_type_var/v3.sail
+           test/typecheck/pass/guards.sail
+           test/typecheck/pass/if_infer.sail
+           test/typecheck/pass/if_infer/v1.expect
+           test/typecheck/pass/if_infer/v1.sail
+           test/typecheck/pass/if_infer/v2.expect
+           test/typecheck/pass/if_infer/v2.sail
+           test/typecheck/pass/if_infer/v3.expect
+           test/typecheck/pass/if_infer/v3.sail
+           test/typecheck/pass/if_return.sail
+           test/typecheck/pass/if_var_updates.sail
+           test/typecheck/pass/implicits.sail
+           test/typecheck/pass/implicits/v1.expect
+           test/typecheck/pass/implicits/v1.sail
+           test/typecheck/pass/implicits/v2.expect
+           test/typecheck/pass/implicits/v2.sail
+           test/typecheck/pass/inc_prelude.sail
+           test/typecheck/pass/inline_typ.sail
+           test/typecheck/pass/int_synonym.sail
+           test/typecheck/pass/issue250.sail
+           test/typecheck/pass/let_subtyp_bug.sail
+           test/typecheck/pass/lexp_vec.sail
+           test/typecheck/pass/lexp_vec/v1.expect
+           test/typecheck/pass/lexp_vec/v1.sail
+           test/typecheck/pass/lexp_vec/v2.expect
+           test/typecheck/pass/lexp_vec/v2.sail
+           test/typecheck/pass/list_cons.sail
+           test/typecheck/pass/list_cons2.sail
+           test/typecheck/pass/list_lit.sail
+           test/typecheck/pass/lt_flow.sail
+           test/typecheck/pass/mapping_clause.sail
+           test/typecheck/pass/mapping_rreg.sail
+           test/typecheck/pass/modify_assignment1.sail
+           test/typecheck/pass/modify_type_chain.sail
+           test/typecheck/pass/multiple_unifiers.sail
+           test/typecheck/pass/mutrec.sail
+           test/typecheck/pass/nat_set.sail
+           test/typecheck/pass/negative_bits_list.sail
+           test/typecheck/pass/negative_bits_list/v1.expect
+           test/typecheck/pass/negative_bits_list/v1.sail
+           test/typecheck/pass/negative_bits_union.sail
+           test/typecheck/pass/new_bitfields.sail
+           test/typecheck/pass/nexp_synonym.sail
+           test/typecheck/pass/nexp_synonym/v1.expect
+           test/typecheck/pass/nexp_synonym/v1.sail
+           test/typecheck/pass/nexp_synonym/v2.expect
+           test/typecheck/pass/nexp_synonym/v2.sail
+           test/typecheck/pass/nexp_synonym2.sail
+           test/typecheck/pass/nlflow.sail
+           test/typecheck/pass/nonexistent_pragma.sail
+           test/typecheck/pass/not_pattern.sail
+           test/typecheck/pass/not_pattern/v1.expect
+           test/typecheck/pass/not_pattern/v1.sail
+           test/typecheck/pass/nzcv.sail
+           test/typecheck/pass/option_either.sail
+           test/typecheck/pass/option_tuple.sail
+           test/typecheck/pass/outcome_impl.sail
+           test/typecheck/pass/outcome_impl/v1.expect
+           test/typecheck/pass/outcome_impl/v1.sail
+           test/typecheck/pass/outcome_impl/v2.expect
+           test/typecheck/pass/outcome_impl/v2.sail
+           test/typecheck/pass/outcome_impl/v3.expect
+           test/typecheck/pass/outcome_impl/v3.sail
+           test/typecheck/pass/outcome_impl_quant.sail
+           test/typecheck/pass/overlap_field.sail
+           test/typecheck/pass/overload_overload.sail
+           test/typecheck/pass/overload_plus.sail
+           test/typecheck/pass/pat_completeness.sail
+           test/typecheck/pass/patternrefinement.sail
+           test/typecheck/pass/phantom_bitlist_struct.sail
+           test/typecheck/pass/phantom_bitlist_union.sail
+           test/typecheck/pass/phantom_num.sail
+           test/typecheck/pass/phantom_option.sail
+           test/typecheck/pass/plus_one_unify.sail
+           test/typecheck/pass/poly_list.sail
+           test/typecheck/pass/poly_vector.sail
+           test/typecheck/pass/poly_vector/v1.expect
+           test/typecheck/pass/poly_vector/v1.sail
+           test/typecheck/pass/poly_vector/v2.expect
+           test/typecheck/pass/poly_vector/v2.sail
+           test/typecheck/pass/pow_32_64.sail
+           test/typecheck/pass/pow_unify.sail
+           test/typecheck/pass/procstate1.sail
+           test/typecheck/pass/pure_let_var.sail
+           test/typecheck/pass/pure_let_var2.sail
+           test/typecheck/pass/pure_record.sail
+           test/typecheck/pass/pure_record2.sail
+           test/typecheck/pass/pure_record3.sail
+           test/typecheck/pass/real.sail
+           test/typecheck/pass/recursion.sail
+           test/typecheck/pass/reg_32_64.sail
+           test/typecheck/pass/reg_32_64/v1.expect
+           test/typecheck/pass/reg_32_64/v1.sail
+           test/typecheck/pass/reg_32_64/v2.expect
+           test/typecheck/pass/reg_32_64/v2.sail
+           test/typecheck/pass/reg_32_64/v3.expect
+           test/typecheck/pass/reg_32_64/v3.sail
+           test/typecheck/pass/reg_list.sail
+           test/typecheck/pass/reg_mod.sail
+           test/typecheck/pass/reg_option.sail
+           test/typecheck/pass/reg_ref.sail
+           test/typecheck/pass/repeat_constraint.sail
+           test/typecheck/pass/repeat_constraint/v1.expect
+           test/typecheck/pass/repeat_constraint/v1.sail
+           test/typecheck/pass/return_simple1.sail
+           test/typecheck/pass/return_simple2.sail
+           test/typecheck/pass/return_simple3.sail
+           test/typecheck/pass/return_simple4.sail
+           test/typecheck/pass/rmem_rmemt_same.sail
+           test/typecheck/pass/scattered_enum.sail
+           test/typecheck/pass/scattered_enum/v1.expect
+           test/typecheck/pass/scattered_enum/v1.sail
+           test/typecheck/pass/scattered_enum/v2.expect
+           test/typecheck/pass/scattered_enum/v2.sail
+           test/typecheck/pass/scattered_enum/v3.expect
+           test/typecheck/pass/scattered_enum/v3.sail
+           test/typecheck/pass/scattered_mapping_doc.sail
+           test/typecheck/pass/scattered_union_doc.sail
+           test/typecheck/pass/shadow_let.sail
+           test/typecheck/pass/shadow_let/v1.expect
+           test/typecheck/pass/shadow_let/v1.sail
+           test/typecheck/pass/short_circuit_bool_ex.sail
+           test/typecheck/pass/short_circuit_bool_ex/v1.expect
+           test/typecheck/pass/short_circuit_bool_ex/v1.sail
+           test/typecheck/pass/simple_record_access.sail
+           test/typecheck/pass/simple_scattered.sail
+           test/typecheck/pass/single_assign_in_block.sail
+           test/typecheck/pass/single_enum.sail
+           test/typecheck/pass/single_union.sail
+           test/typecheck/pass/sizeof_fixed.sail
+           test/typecheck/pass/string_append_non_exec.sail
+           test/typecheck/pass/struct_pattern.sail
+           test/typecheck/pass/struct_pattern/v1.expect
+           test/typecheck/pass/struct_pattern/v1.sail
+           test/typecheck/pass/struct_pattern_partial.sail
+           test/typecheck/pass/tautology.sail
+           test/typecheck/pass/true_false.sail
+           test/typecheck/pass/try_while_try.sail
+           test/typecheck/pass/tuple_assign.sail
+           test/typecheck/pass/tuple_assign/v1.expect
+           test/typecheck/pass/tuple_assign/v1.sail
+           test/typecheck/pass/tuple_bitvector_int_pat.sail
+           test/typecheck/pass/tuple_bitvector_int_pat/v1.expect
+           test/typecheck/pass/tuple_bitvector_int_pat/v1.sail
+           test/typecheck/pass/tuple_bitvector_int_pat/v2.expect
+           test/typecheck/pass/tuple_bitvector_int_pat/v2.sail
+           test/typecheck/pass/tuple_bitvector_int_pat2.sail
+           test/typecheck/pass/tuple_bitvector_int_pat3.sail
+           test/typecheck/pass/tuple_fun.sail
+           test/typecheck/pass/tuple_type_cast.sail
+           test/typecheck/pass/type_div.sail
+           test/typecheck/pass/type_pow_zero.sail
+           test/typecheck/pass/tyvar_shadow.sail
+           test/typecheck/pass/union_infer.sail
+           test/typecheck/pass/unsigned_index.sail
+           test/typecheck/pass/varity.sail
+           test/typecheck/pass/vec_length.sail
+           test/typecheck/pass/vec_length/v1.expect
+           test/typecheck/pass/vec_length/v1.sail
+           test/typecheck/pass/vec_length/v1_inc.expect
+           test/typecheck/pass/vec_length/v1_inc.sail
+           test/typecheck/pass/vec_length/v2.expect
+           test/typecheck/pass/vec_length/v2.sail
+           test/typecheck/pass/vec_length/v2_inc.expect
+           test/typecheck/pass/vec_length/v2_inc.sail
+           test/typecheck/pass/vec_length/v3.expect
+           test/typecheck/pass/vec_length/v3.sail
+           test/typecheck/pass/vec_length_inc.sail
+           test/typecheck/pass/vec_pat1.sail
+           test/typecheck/pass/vector_access.sail
+           test/typecheck/pass/vector_access_dec.sail
+           test/typecheck/pass/vector_append.sail
+           test/typecheck/pass/vector_append_gen.sail
+           test/typecheck/pass/vector_concat_assign.sail
+           test/typecheck/pass/vector_pattern_split.sail
+           test/typecheck/pass/vector_subrange_gen.sail
+           test/typecheck/pass/vector_subrange_pattern.sail
+           test/typecheck/pass/vector_subrange_pattern/v1.expect
+           test/typecheck/pass/vector_subrange_pattern/v1.sail
+           test/typecheck/pass/vector_subrange_pattern/v2.expect
+           test/typecheck/pass/vector_subrange_pattern/v2.sail
+           test/typecheck/pass/vector_subrange_pattern/v3.expect
+           test/typecheck/pass/vector_subrange_pattern/v3.sail
+           test/typecheck/pass/wf_specs.sail
+           test/typecheck/pass/wf_specs/wf_specs.expect
+           test/typecheck/pass/wf_specs/wf_specs.sail
+           test/typecheck/pass/while_MM.sail
+           test/typecheck/pass/while_MP.sail
+           test/typecheck/pass/while_PM.sail
+           test/typecheck/pass/while_PP.sail
+           test/typecheck/pass/zero_length_bv.sail
+           test/typecheck/run_tests.py
+           test/typecheck/scattered_function_doc.sail
+           test/typecheck/update_errors.sh
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     lib/arith.sail
+           lib/concurrency_interface/barrier.sail
+           lib/concurrency_interface/cache_op.sail
+           lib/concurrency_interface/common.sail
+           lib/concurrency_interface/emulator_memory.sail
+           lib/concurrency_interface/exception.sail
+           lib/concurrency_interface/read_write.sail
+           lib/concurrency_interface/tlbi.sail
+           lib/concurrency_interface/v1.sail
+           lib/elf.c
+           lib/elf.h
+           lib/elf.sail
+           lib/exception.sail
+           lib/exception_basic.sail
+           lib/exception_result.sail
+           lib/float.sail
+           lib/flow.sail
+           lib/generic_equality.sail
+           lib/instr_kinds.sail
+           lib/isla.sail
+           lib/mapping.sail
+           lib/mono_rewrites.sail
+           lib/option.sail
+           lib/prelude.sail
+           lib/real.sail
+           lib/regfp.sail
+           lib/result.sail
+           lib/reverse_endianness.sail
+           lib/rts.c
+           lib/rts.h
+           lib/sail.c
+           lib/sail.h
+           lib/sail_coverage.h
+           lib/sail_failure.c
+           lib/sail_failure.h
+           lib/sail_state.h
+           lib/smt.sail
+           lib/string.sail
+           lib/trace.sail
+           lib/vector.sail
+           src/lib/parser.mly
+Copyright: 2013-2021 Kathyrn Gray Shaked Flur Stephen Kell Gabriel Kerneis Robert Norton-Wright Christopher Pulte Peter Sewell Alasdair Armstrong Brian Campbell Thomas Bauereiss Anthony Fox Jon French Dominic Mulligan Stephen Kell Mark Wassell Alastair Reid (Arm Ltd)
+License:   __UNKNOWN__
+ This work was partially supported by EPSRC grant EP/K008528/1 <a
+
+Files:     aarch64_small/aarch64_regfp.sail
+           aarch64_small/armV8.h.sail
+           aarch64_small/armV8.sail
+           aarch64_small/armV8_A32_sys_regs.sail
+           aarch64_small/armV8_A64_lib.sail
+           aarch64_small/armV8_A64_special_purpose_regs.sail
+           aarch64_small/armV8_A64_sys_regs.sail
+           aarch64_small/armV8_common_lib.sail
+           aarch64_small/armV8_lib.h.sail
+           aarch64_small/armV8_pstate.sail
+           etc/arm_header
+           etc/mips_header
+           etc/power_header
+Copyright: 2015-2017 Gabriel Kerneis, Susmit Sarkar, Kathyrn Gray
+           2015-2017 Kathyrn Gray
+           2015-2017 Peter Sewell
+           2015-2017 Robert M. Norton
+           2015-2017 Shaked Flur
+License:   BSD-2-Clause
+ This software was developed by the University of Cambridge Computer
+ Laboratory as part of the Rigorous Engineering of Mainstream Systems
+ (REMS) project, funded by EPSRC grant EP/K008528/1.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in
+ the documentation and/or other materials provided with the
+ distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+Files:     lib/nostd/sail_spinlock.h
+Copyright: 2018 The Hafnium Authors.
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ https://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     README.md
+Copyright: Arm Ltd, and distributed under a BSD Clear licence. See https://github.com/meriac/archex, and the [README file](aarch64/README) in that directory.
+License:   __UNKNOWN__
+ The hand-written Armv8 model, in arm/, is distributed under the
+ 2-clause BSD licence in the headers of those files.
+ .
+ The x86 model in x86/ is distributed under the 2-clause BSD licence in
+ the headers of those files.
+ .
+ The POWER model in power/ is distributed under the 2-clause BSD licence in
+ the headers of those files.
+ .
+ The models in separate repositories are licensed as described in each.
+ .
+ ## Funding
+ .
+ This work was partially supported by the UK Government Industrial Strategy Challenge Fund (ISCF) under the Digital Security by Design (DSbD) Programme, to deliver a DSbDtech enabled digital platform (grant 105694).
+ This project has received funding from the European Research Council
+ (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 789108, ELVER).
+
+Files:     editors/vim/syntax/sail.vim
+Copyright: __NO_COPYRIGHT__ in: editors/vim/syntax/sail.vim
+License:   __UNKNOWN__
+ For version 5.x: Clear all syntax items
+ For version 6.x: Quit when a syntax file was already loaded
+
+Files:     editors/sail-mode.el
+Copyright: 2013-2018 The Sail Authors
+License:   __UNKNOWN__
+ This file is not part of GNU Emacs.
+ .
+ License:
+ .
+ 2-Clause BSD License (See LICENSE file in Sail repository)
+ .
+ Commentary:
+ .
+ This mode is only compatible with new, recent of the new Sail on the "sail2" branch.
+ .
+ Code:
+
+Files:     etc/anon_header
+Copyright: 2018 Sail contributors.
+License:   __UNKNOWN__
+ This material is provided for anonymous review purposes only.
+
+Files:     doc/Makefile
+Copyright: __NO_COPYRIGHT__ in: doc/Makefile
+License:   __UNKNOWN__
+ This software was developed by the University of Cambridge Computer   #
+ Laboratory as part of the Rigorous Engineering of Mainstream Systems  #
+ (REMS) project, funded by EPSRC grant EP/K008528/1.                   #
+ #
+ Redistribution and use in source and binary forms, with or without    #
+ modification, are permitted provided that the following conditions    #
+ are met:                                                              #
+ 1. Redistributions of source code must retain the above copyright     #
+ notice, this list of conditions and the following disclaimer.      #
+ 2. Redistributions in binary form must reproduce the above copyright  #
+ notice, this list of conditions and the following disclaimer in    #
+ the documentation and/or other materials provided with the         #
+ distribution.                                                      #
+ #
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS''    #
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED     #
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A       #
+ PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR   #
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,          #
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      #
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF      #
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND   #
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,    #
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT    #
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF    #
+ SUCH DAMAGE.                                                          #
+
+Files:     doc/examples/riscv_duopod.sail
+Copyright: __NO_COPYRIGHT__ in: doc/examples/riscv_duopod.sail
+License:   BSD-2-Clause
+ This software was developed by the above within the Rigorous
+ Engineering of Mainstream Systems (REMS) project, partly funded by
+ EPSRC grant EP/K008528/1, at the Universities of Cambridge and
+ Edinburgh.
+ .
+ This software was developed by SRI International and the University of
+ Cambridge Computer Laboratory (Department of Computer Science and
+ Technology) under DARPA/AFRL contract FA8650-18-C-7809 ("CIFV"), and
+ under DARPA contract HR0011-18-C-0016 ("ECATS") as part of the DARPA
+ SSITH research programme.
+ .
+ This project has received funding from the European Research Council
+ (ERC) under the European Union’s Horizon 2020 research and innovation
+ programme (grant agreement 789108, ELVER).
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in
+ the documentation and/or other materials provided with the
+ distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+Files:     THIRD_PARTY_FILES.md
+Copyright: 2001-2003 George C. Necula    <necula@cs.berkeley.edu> Scott McPeak        <smcpeak@cs.berkeley.edu> Wes Weimer          <weimer@cs.berkeley.edu> Ben Liblit          <liblit@cs.berkeley.edu>
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ 3. The names of the contributors may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+ IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ ```
+ .
+ ASL interpreter
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         etc/logo/sail_logo.svg
+#         etc/logo/sail_logo_square.svg
+
+#----------------------------------------------------------------------------
+# huge files   (skipped):
+#         snapshots/isabelle/riscv/Riscv.thy
+#         snapshots/isabelle/aarch64/Aarch64.thy
+#         snapshots/coq/riscv/riscv.v
+#         snapshots/hol4/sail/riscv/riscvScript.sml
+#         snapshots/hol4/sail/aarch64/aarch64_monoScript.sml
+#         test/cheri/freebsd-beri-sim-mdroot-smoketest_bootonly-kernel.bz2
+#         test/cheri/cheribsd-cheri-sim-mdroot-smoketest-kernel.bz2
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+    Sail
+ .
+ Sail and the Sail architecture models here, comprising all files and
+ directories except the ASL-derived Sail code in the aarch64 directory,
+ and the logo in the etc/logo/ directory (by Jean Pichon, under CC0),
+ are subject to the BSD two-clause licence below.
+ .
+ The ASL derived parts of the ARMv8.3 specification in
+ aarch64/no_vector and aarch64/full are copyright ARM Ltd.
+ .
+ Copyright (c) 2013-2021
+   Kathyrn Gray
+   Shaked Flur
+   Stephen Kell
+   Gabriel Kerneis
+   Robert Norton-Wright
+   Christopher Pulte
+   Peter Sewell
+   Alasdair Armstrong
+   Brian Campbell
+   Thomas Bauereiss
+   Anthony Fox
+   Jon French
+   Dominic Mulligan
+   Stephen Kell
+   Mark Wassell
+   Alastair Reid (Arm Ltd)
+ .
+ All rights reserved.
+ .
+ This work was partially supported by EPSRC grant EP/K008528/1 <a
+ href="http://www.cl.cam.ac.uk/users/pes20/rems">REMS: Rigorous
+ Engineering for Mainstream Systems</a>, an ARM iCASE award, EPSRC IAA
+ KTF funding, and donations from Arm.  This project has received
+ funding from the European Research Council (ERC) under the European
+ Union’s Horizon 2020 research and innovation programme (grant
+ agreement No 789108, ELVER).
+ .
+ This software was developed by SRI International and the University of
+ Cambridge Computer Laboratory (Department of Computer Science and
+ Technology) under DARPA/AFRL contracts FA8650-18-C-7809 ("CIFV")
+ and FA8750-10-C-0237 ("CTSRD").
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.

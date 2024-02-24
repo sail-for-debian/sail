@@ -1,0 +1,12 @@
+sail
+libsail
+sail_manifest
+sail_ocaml_backend
+sail_c_backend
+sail_smt_backend
+sail_sv_backend
+sail_lem_backend
+sail_doc_backend
+sail_coq_backend
+sail_latex_backend
+sail_output

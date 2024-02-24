@@ -1,0 +1,6 @@
+sail (0.17.1-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Bo YU <tsu.yubo@gmail.com>  Sat, 24 Feb 2024 21:22:00 +0800

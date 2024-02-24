@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+export DH_VERBOSE = 1
+include /usr/share/ocaml/ocamlvars.mk
+
+export LEMLIB=/usr/lib/ocaml/lem/library/
+
+export lem=/usr/bin/lem
+
+%:
+	dh $@ --with ocaml --buildsystem ocaml_dune
+
+#execute_before_dh_auto_configure:
+#	ls /usr/bin/l*
+#	lem
+
+#override_dh_auto_configure:
+	# Add commands here to update OCaml system variables
+	#export OCAMLPATH=/path/to/ocaml/libraries:$OCAMLPATH
+#	export PATH=/usr/bin/lem:${PATH}
+#	dh_auto_configure
+
+
+override_dh_auto_missing:
+	dh_missing --fail-missing || true
+
+override_dh_ocaml:

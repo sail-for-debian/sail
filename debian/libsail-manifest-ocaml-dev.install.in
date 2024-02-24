@@ -1,0 +1,2 @@
+@OCamlStdlibDir@/sail_manifest/*
+/usr/bin/sail_manifest

@@ -1,0 +1,4 @@
+@OCamlStdlibDir@/sail/*
+usr/bin/sail
+usr/share/sail/* usr/lib/ocaml/sail/
+#usr/share/libsail/*
